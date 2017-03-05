@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {
-	background: url('images/e.png') no-repeat;
+	background: url('images/fundo.png') repeat left top;
 	font-family: arial black, sans-serif;
 	font-size: 11px;
 	margin: 0px;
