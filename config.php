@@ -2,8 +2,13 @@
 /*These configs are neccessary in order to make Modern AAC work.*/
 
 /*URL of website including http:// and without slash at the end! */
-$config['website'] = $config['website'] = 'http://'.$_SERVER['HTTP_HOST'] . '/'.trim(dirname($_SERVER['SCRIPT_NAME']), '/.\\');
-
+if($_SERVER['HTTP_HOST'] == 'localhost' or $_SERVER['HTTP_HOST'] == '127.0.0.1' or $_SERVER['HTTP_HOST'] == 'localhost:8080' or $_SERVER['HTTP_HOST'] == '127.0.0.1:8080'){
+	//	is loopback andress
+	$config['website'] = $config['website'] = 'http://'.$_SERVER['HTTP_HOST'] . '/'.trim(dirname($_SERVER['SCRIPT_NAME']), '/.\\');	
+}else{
+	//	not ^^	
+	$config['website'] = $config['website'] = 'http://'.$_SERVER['HTTP_HOST'] . trim(dirname($_SERVER['SCRIPT_NAME']), '/.\\');
+}
 
 /*Database information*/
 $config['database']['host'] = "aspiraboo.servegame.com";
