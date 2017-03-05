@@ -76,7 +76,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '127.0.0.1',
+	'hostname' => 'aspiraboo.servegame.com',
 	'username' => 'root',
 	'password' => '',
 	'database' => 'dbohunter',

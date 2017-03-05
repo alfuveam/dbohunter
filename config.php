@@ -6,7 +6,7 @@ $config['website'] = $config['website'] = 'http://'.$_SERVER['HTTP_HOST'] . '/'.
 
 
 /*Database information*/
-$config['database']['host'] = "127.0.0.1";
+$config['database']['host'] = "aspiraboo.servegame.com";
 $config['database']['login'] = "root";
 $config['database']['password'] = "";
 $config['database']['database'] = "dbohunter";
@@ -658,7 +658,7 @@ $config['houseAuctionTime'] = 604800;
 $config['timezone'] = "Europe/London";
 
 /*Allowed IPs to use command prompt in admin panel*/
-$config['allowedToUseCMD'] = array("127.0.0.1", "localhost");
+$config['allowedToUseCMD'] = array("127.0.0.1", "localhost","aspiraboo.servegame.com");
 
 /* Path to your UI theme */
 $config['UItheme'] = "smoothness/jquery-ui-1.7.2.custom.css";
