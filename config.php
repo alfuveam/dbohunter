@@ -7,7 +7,7 @@ $config['website'] = $config['website'] = 'http://'.$_SERVER['HTTP_HOST'] . '/'.
 
 /*Database information*/
 $config['database']['host'] = "aspiraboo.servegame.com";
-$config['database']['login'] = "root";
+$config['database']['login'] = "felipe";
 $config['database']['password'] = "";
 $config['database']['database'] = "dbohunter";
 
