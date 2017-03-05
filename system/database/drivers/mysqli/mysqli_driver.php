@@ -198,6 +198,11 @@ class CI_DB_mysqli_driver extends CI_DB {
 			}
 		}
 		echo 'hostname: ' . $hostname;
+		echo ' - username: ' .$this->username;
+		echo ' - password: ' .$this->password;
+		echo ' - database: ' .$this->database;
+		echo ' - socket: ' .$port, $socket;
+		echo ' - client_flags: ' .$client_flags;
 		exit;
 		if ($this->_mysqli->real_connect($hostname, $this->username, $this->password, $this->database, $port, $socket, $client_flags))
 		{
