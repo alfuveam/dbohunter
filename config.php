@@ -658,7 +658,7 @@ $config['houseAuctionTime'] = 604800;
 $config['timezone'] = "Europe/London";
 
 /*Allowed IPs to use command prompt in admin panel*/
-$config['allowedToUseCMD'] = array("127.0.0.1", "localhost","aspiraboo.servegame.com");
+$config['allowedToUseCMD'] = array("127.0.0.1", "localhost");
 
 /* Path to your UI theme */
 $config['UItheme'] = "smoothness/jquery-ui-1.7.2.custom.css";
