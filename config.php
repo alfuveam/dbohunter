@@ -7,7 +7,7 @@ if($_SERVER['HTTP_HOST'] == 'localhost' or $_SERVER['HTTP_HOST'] == '127.0.0.1' 
 	$config['website'] = $config['website'] = 'http://'.$_SERVER['HTTP_HOST'] . '/'.trim(dirname($_SERVER['SCRIPT_NAME']), '/.\\');	
 }else{
 	//	not ^^	
-	$config['website'] = $config['website'] = 'http://'.$_SERVER['HTTP_HOST'] . trim(dirname($_SERVER['SCRIPT_NAME']), '/.\\');
+	$config['website'] = $config['website'] = 'http://'.$_SERVER['HTTP_HOST'];
 }
 
 /*Database information*/
