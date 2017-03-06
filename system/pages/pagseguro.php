@@ -9,15 +9,15 @@
 	if($ide->isLogged()){
 		$accountName = $_SESSION['name'];
 		//$SQL->query('SELECT * FROM accounts WHERE name="'.$accountName.'"')->fetch();
-		//https://pagseguro.uol.com.br/checkout/checkout.jhtml
+		//https://pagseguro.uol.com.br/checkout/checkout.jhtml		
 	?>
-	<form target="pagseguro" method="post" action="https://sandbox.pagseguro.uol.com.br/v2/checkout/payment.html">
-		<input type="hidden" name="email_cobranca" value="felipe.b.t@hotmail.com">
+	<form target="pagseguro" method="post" action="https://sandbox.pagseguro.uol.com.br/checkout/checkout.jhtml">
+		<input type="hidden" name="email_cobranca" value="<?php echo $config['pagseguro']['email']; ?>">
 		<input type="hidden" name="tipo" value="CP">
 		<input type="hidden" name="moeda" value="BRL">
 		<input type="hidden" name="item_id_1" value="1">
 		<input type="hidden" name="item_descr_1" value="<?php echo $config['pagseguro']['produtoNome']; ?>">
-		<input type="hidden" name="item_valor_1" value="100">
+		<input type="hidden" name="item_valor_1" value="<?php echo $config['pagseguro']['produtoValor']; ?>">
 		<input type="hidden" name="item_frete_1" value="0">
 		<input type="hidden" name="item_peso_1" value="0">
 		<input type="hidden" name="ref_transacao" value="<?php echo $accountName; ?>">
