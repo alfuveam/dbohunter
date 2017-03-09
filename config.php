@@ -847,5 +847,5 @@ $config['pagseguro']['produtoNome'] = 'Pontos Premium';
 // 4254 = R$ 42,54
 $config['pagseguro']['produtoValor'] = '100';
 // Token gerado no painel do pagseguro [b]--token você pega após confirmar que tem mais de 18 anos para receber as donations--[/b]
-$config['pagseguro']['token'] = '41AE5B3B246F41E0830AF51726DCE147';
+$config['pagseguro']['token'] = '6D1AC895D28C4234BDAE4EA30A662D68';
 ?>
